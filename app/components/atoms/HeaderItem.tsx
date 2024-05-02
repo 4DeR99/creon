@@ -2,19 +2,22 @@ import React from 'react';
 
 interface HeaderItemProps {
   title: string;
-  soon?: boolean;
+  active?: boolean;
 }
 
-function HeaderItem({ title, soon }: HeaderItemProps) {
+function HeaderItem({ title, active }: HeaderItemProps) {
   return (
-    <div className="flex items-start">
+    <button
+      className={`flex items-start ${active ? 'hover:text-blue transition duration-500 ' : ''}`}
+      disabled={!active}
+      onClick={() => {}}>
       <span className="font-satoshiBold text-[18px]">{title}</span>
-      {soon && (
+      {!active && (
         <span className="text-[10px] font-satoshiBold text-purple ml-1 px-1 self-start bg-black rounded-[100px]">
           SOON
         </span>
       )}
-    </div>
+    </button>
   );
 }
 

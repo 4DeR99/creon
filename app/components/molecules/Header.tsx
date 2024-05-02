@@ -7,19 +7,19 @@ import Button from 'components/atoms/Button';
 
 function Header() {
   const headerItems = [
-    { title: 'Creon Pass', soon: false },
-    { title: 'Token', soon: true },
-    { title: 'AI Revenue', soon: true },
-    { title: 'AI Lunchpad', soon: true },
+    { title: 'Creon Pass', active: true },
+    { title: 'Token', active: false },
+    { title: 'AI Revenue', active: false },
+    { title: 'AI Lunchpad', active: false },
   ];
 
   return (
-    <div className="w-full py-[30px] px-[50px] flex items-center justify-between">
+    <div className="w-full py-[30px] px-[50px] flex items-center justify-between absolute top-0">
       <Image src={Logo} alt="hamid" />
       <div className="flex gap-[58px] items-center">
         <div className="flex gap-10">
           {headerItems.map((item, index) => (
-            <HeaderItem key={index} title={item.title} soon={item.soon} />
+            <HeaderItem key={index} title={item.title} active={item.active} />
           ))}
         </div>
         <Button
