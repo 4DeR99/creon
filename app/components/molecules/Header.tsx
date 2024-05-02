@@ -10,7 +10,7 @@ function Header() {
     { title: 'Creon Pass', active: true },
     { title: 'Token', active: false },
     { title: 'AI Revenue', active: false },
-    { title: 'AI Lunchpad', active: false },
+    { title: 'AI Launchpad', active: false },
   ];
 
   return (
