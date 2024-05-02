@@ -19,7 +19,7 @@ function Button({
   hoverBackGroundColor,
   onClick,
 }: ButtonProps) {
-  const className = `relative overflow-hidden group rounded font-satoshiBold text-[18px] ${width} ${height} ${border} ${backGroundColor} ${hoverBackGroundColor} hover:border-none transition duration-500`;
+  const className = `relative overflow-hidden group rounded-[6px] font-satoshiBold text-[18px] ${width} ${height} ${border} ${backGroundColor} ${hoverBackGroundColor} hover:border-none transition duration-500`;
 
   return (
     <button className={className} onClick={() => onclick}>
