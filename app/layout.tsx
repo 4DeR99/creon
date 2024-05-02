@@ -11,8 +11,8 @@ function Layout({ children }: LayoutProps) {
       <body>
         <div className="flex flex-col items-center w-full h-full bg-black text-primaryText">
           <Header />
-          <main className="container flex flex-col m-auto">
-            <div className="container flex flex-col w-full">{children}</div>
+          <main className="w-full flex flex-col items-center">
+            <div className="w-full flex flex-col">{children}</div>
           </main>
         </div>
       </body>
