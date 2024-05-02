@@ -14,7 +14,7 @@ function Header() {
   ];
 
   return (
-    <div className="w-full py-[30px] px-[50px] flex items-center justify-between absolute top-0">
+    <div className="z-50 w-full py-[30px] px-[50px] flex items-center justify-between absolute top-0">
       <Image src={Logo} alt="hamid" />
       <div className="flex gap-[58px] items-center">
         <div className="flex gap-10">
