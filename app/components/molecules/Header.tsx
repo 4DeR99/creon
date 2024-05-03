@@ -26,9 +26,9 @@ function Header() {
           title="Connect"
           width="w-[132px]"
           height="h-[44px]"
-          border="border-[2px] border-[#fff]"
+          border="border-[2px] border-white"
           backGroundColor=""
-          hoverBackGroundColor="hover:bg-blue"
+          hoverBackGroundColor="hover:bg-primary"
           onClick={() => {}}
         />
       </div>

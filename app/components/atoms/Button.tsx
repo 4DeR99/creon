@@ -23,10 +23,10 @@ function Button({
 
   return (
     <button className={className} onClick={() => onclick}>
-      <span className="absolute top-0 left-0 w-full h-full flex justify-center ease-in-out items-center text-primaryText transition duration-[400ms] group-hover:translate-y-[-80%]">
+      <span className="absolute top-0 left-0 w-full h-full flex justify-center ease-in-out items-center text-white transition duration-[400ms] group-hover:translate-y-[-80%]">
         {title}
       </span>
-      <span className="absolute top-[80%] left-0 w-full h-full flex justify-center items-center ease-in-out text-primaryText transition duration-[400ms] group-hover:translate-y-[-80%]">
+      <span className="absolute top-[80%] left-0 w-full h-full flex justify-center items-center ease-in-out text-white transition duration-[400ms] group-hover:translate-y-[-80%]">
         {title}
       </span>
     </button>

@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -8,11 +9,10 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      black: '#000',
-      blue: '#3D8BFF',
-      purple: '#AB23FF',
-      white: '#fff',
+      primary: '#3D8BFF',
+      secondary: '#AB23FF',
       primaryText: '#fff',
+      ...colors,
     },
     fontFamily: {
       monument: ['MonumentExtended-Regular', 'sans-serif'],
