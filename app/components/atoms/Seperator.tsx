@@ -7,7 +7,7 @@ interface SeperatorProps {
 }
 
 function Seperator({ vertical, color, className }: SeperatorProps) {
-  color = color ?? 'bg-gray-500';
+  color = color ?? 'bg-[#13171D]';
   const dimentions = vertical ? `h-full w-[1px]]` : `h-[1px] w-full`;
 
   return <div className={`${dimentions} ${color} ${className}`} />;
