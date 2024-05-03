@@ -17,9 +17,13 @@ function Seperator({
 }: SeperatorProps) {
   color = color ?? 'border-gray-500';
   size = size ?? '1pxs';
-  lenght = lenght ?? (vertical ? `h-full w-[${size}]` : 'w-full h-[${size}]');
+  lenght = lenght ?? '100%';
 
-  return <div className={`${lenght} ${color}`} />;
+  const dimentions = vertical
+    ? `h-[${lenght}] w-[${size}]`
+    : `w-[${lenght}] h-[${size}]`;
+
+  return <div className={`${dimentions} ${color}`} />;
 }
 
 export default Seperator;
