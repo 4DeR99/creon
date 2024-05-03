@@ -13,11 +13,13 @@ function Header() {
     { title: 'AI Launchpad', active: false },
   ];
 
+  // TODO: add a button to show a menu on mobile
+
   return (
     <div className="z-50 w-full py-[30px] px-[50px] flex items-center justify-between absolute top-0">
       <Image src={Logo} alt="hamid" />
-      <div className="flex gap-[58px] items-center">
-        <div className="flex gap-10">
+      <div className="lg:gap-[35px] xl:gap-[58px] items-center hidden lg:flex">
+        <div className="flex  gap-4 xl:gap-10">
           {headerItems.map((item, index) => (
             <HeaderItem key={index} title={item.title} active={item.active} />
           ))}

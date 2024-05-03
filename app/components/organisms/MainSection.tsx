@@ -18,7 +18,7 @@ function MainSection() {
         objectPosition="center"
         className="absolute top-0 z-10 object-cover"
       />
-      <div className="w-full md:w-[80%] lg:w-[750px] xl:w-[1075px] 2xl:w-[1450px] flex flex-col items-start gap-10 text-primaryText mx-auto mb-[10vh] z-20 h-full">
+      <div className="w-[80%] md:w-[70%] lg:w-[750px] xl:w-[1075px] 2xl:w-[1450px] flex flex-col items-start gap-10 text-primaryText mx-auto mb-[25vh] lg:mb-[10vh] z-20 h-full">
         <LargeTitle title={largTitle} className="xl:pr-[8rem] pt-1" />
         <div className="flex flex-col gap-3">
           <Seperator color="bg-white bg-gradient-to-r from-primary to-secondary" />
