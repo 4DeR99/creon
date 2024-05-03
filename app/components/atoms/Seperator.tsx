@@ -1,29 +1,16 @@
 import React from 'react';
 
 interface SeperatorProps {
-  lenght?: string;
-  size?: string;
   vertical?: boolean;
   color?: string;
   className?: string;
 }
 
-function Seperator({
-  lenght,
-  vertical,
-  color,
-  size,
-  className,
-}: SeperatorProps) {
-  color = color ?? 'border-gray-500';
-  size = size ?? '1pxs';
-  lenght = lenght ?? '100%';
+function Seperator({ vertical, color, className }: SeperatorProps) {
+  color = color ?? 'bg-gray-500';
+  const dimentions = vertical ? `h-full w-[1px]]` : `h-[1px] w-full`;
 
-  const dimentions = vertical
-    ? `h-[${lenght}] w-[${size}]`
-    : `w-[${lenght}] h-[${size}]`;
-
-  return <div className={`${dimentions} ${color}`} />;
+  return <div className={`${dimentions} ${color} ${className}`} />;
 }
 
 export default Seperator;
