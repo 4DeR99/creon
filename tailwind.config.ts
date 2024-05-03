@@ -11,6 +11,7 @@ const config: Config = {
       black: '#000',
       blue: '#3D8BFF',
       purple: '#AB23FF',
+      white: '#fff',
       primaryText: '#fff',
     },
     fontFamily: {
