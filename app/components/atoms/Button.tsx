@@ -7,7 +7,8 @@ interface ButtonProps {
   border?: string;
   backGroundColor?: string;
   hoverBackGroundColor?: string;
-  onClick: () => void;
+  onClick?: () => void;
+  className?: string;
 }
 
 function Button({
@@ -18,11 +19,12 @@ function Button({
   backGroundColor,
   hoverBackGroundColor,
   onClick,
+  className,
 }: ButtonProps) {
-  const className = `relative overflow-hidden group rounded-[6px] font-satoshiBold text-[18px] ${width} ${height} ${border} ${backGroundColor} ${hoverBackGroundColor} hover:border-none transition duration-500`;
+  const styleName = `relative overflow-hidden group rounded-[6px] font-satoshiBold text-[18px] ${width} ${height} ${border} ${backGroundColor} ${hoverBackGroundColor} hover:border-none transition duration-500 ${className}`;
 
   return (
-    <button className={className} onClick={() => onclick}>
+    <button className={styleName}>
       <span className="absolute top-0 left-0 w-full h-full flex justify-center ease-in-out items-center text-white transition duration-[400ms] group-hover:translate-y-[-80%]">
         {title}
       </span>
