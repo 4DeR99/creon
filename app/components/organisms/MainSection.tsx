@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import backgroundImage from 'images/mainBackground.png';
 import LargeTitle from 'components/atoms/LargeTitle';
 import Seperator from 'components/atoms/Seperator';
 import MediumTitle from 'components/atoms/MediumTitle';
@@ -9,6 +8,7 @@ function MainSection() {
   const largTitle = `The world's first platform for Tokenizing \n AI blockchain projects`;
   const mediumTitle =
     'Hold the Creon Pass NFT and earn passive income from AI Tools';
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-end">
       <Image

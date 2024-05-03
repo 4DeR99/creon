@@ -8,7 +8,7 @@ interface MediumTitleProps {
 function MediumTitle({ title, className }: MediumTitleProps) {
   return (
     <h2
-      className={`leading-[1] font-satoshiBold text-[18px] md:text-[18px] ${className}`}>
+      className={`leading-[1] font-satoshiBold text-[18px] md:text-[22px] ${className}`}>
       {title}
     </h2>
   );
