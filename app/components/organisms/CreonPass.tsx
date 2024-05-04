@@ -7,7 +7,7 @@ function CreonPass() {
     <div className="w-[90%] md:w-[70%] lg:w-[750px] xl:w-[1075px] 2xl:w-[1450px] min-h-screen flex items-center justify-center">
       <div className="flex items-center gap-11 ">
         <CreonPassDetails />
-        <div className="2xl:flex w-full h-full hidden">
+        <div className="2xl:flex w-full hidden">
           <Image
             src="/images/creonPass.png"
             alt="creonPass"

@@ -1,7 +1,7 @@
 import Button from 'components/atoms/Button';
 import Card from 'components/atoms/Card';
 import LargeTitle from 'components/atoms/LargeTitle';
-import MediumTitle from 'components/atoms/MediumTitle';
+import MediumTitle from 'components/atoms/SmallTitle';
 import Seperator from 'components/atoms/Seperator';
 import Image from 'next/image';
 import React from 'react';
@@ -18,7 +18,7 @@ function CreonPassDetails() {
   ];
 
   return (
-    <div className="flex flex-col items-start grow gap-8 py-4 ">
+    <div className="flex flex-col items-start gap-8 py-4 ">
       <LargeTitle title={largeTitle} />
       <Seperator />
       <MediumTitle
@@ -40,7 +40,7 @@ function CreonPassDetails() {
             width="w-full lg:w-[453px]"
             backGroundColor="bg-gradient-to-r from-primary to-secondary"
             hoverBackGroundColor="hover:to-primary"
-            className="my-10"
+            className="mt-[4rem]"
           />
         </div>
         <Image
