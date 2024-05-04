@@ -5,6 +5,7 @@ import MediumTitle from 'components/atoms/SmallTitle';
 import Seperator from 'components/atoms/Seperator';
 import Image from 'next/image';
 import React from 'react';
+import CreonVideo from './CreonVideo';
 
 function CreonPassDetails() {
   const largeTitle = 'creon pass nft';
@@ -43,12 +44,10 @@ function CreonPassDetails() {
             className="mt-[4rem]"
           />
         </div>
-        <Image
-          src="/images/creonPass.png"
-          alt="creonPass"
+        <CreonVideo
           width={408}
           height={408}
-          className="hidden xl:flex 2xl:hidden"
+          className="hidden xl:flex 2xl:hidden xl:justify-end"
         />
       </div>
     </div>

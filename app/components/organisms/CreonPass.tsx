@@ -1,4 +1,5 @@
 import CreonPassDetails from 'components/molecules/CreonPassDetails';
+import CreonVideo from 'components/molecules/CreonVideo';
 import Image from 'next/image';
 import React from 'react';
 
@@ -8,12 +9,7 @@ function CreonPass() {
       <div className="flex items-center gap-11 ">
         <CreonPassDetails />
         <div className="2xl:flex w-full hidden">
-          <Image
-            src="/images/creonPass.png"
-            alt="creonPass"
-            width={808}
-            height={808}
-          />
+          <CreonVideo width={808} height={808} />
         </div>
       </div>
     </div>
