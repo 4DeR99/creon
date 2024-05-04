@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface MediumTitleProps {
+interface SmallTitleProps {
   children?: React.ReactNode;
   title: string;
   className?: string;
 }
 
-function MediumTitle({ title, className, children }: MediumTitleProps) {
+function SmallTitle({ title, className, children }: SmallTitleProps) {
   if (children)
     return (
       <h2
@@ -23,4 +23,4 @@ function MediumTitle({ title, className, children }: MediumTitleProps) {
   );
 }
 
-export default MediumTitle;
+export default SmallTitle;
