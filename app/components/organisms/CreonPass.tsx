@@ -1,6 +1,5 @@
 import CreonPassDetails from 'components/molecules/CreonPassDetails';
 import CreonVideo from 'components/molecules/CreonVideo';
-import Image from 'next/image';
 import React from 'react';
 
 function CreonPass() {
