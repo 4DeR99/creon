@@ -24,7 +24,7 @@ function More() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center gap-5 min-h-screen my-32 z-50">
+    <div className="flex flex-col items-center justify-center gap-5 min-h-screen my-20 z-50">
       {items.map((item, index) => (
         <MoreItem
           key={index}
