@@ -21,7 +21,7 @@ function Button({
   onClick,
   className,
 }: ButtonProps) {
-  const styleName = `relative overflow-hidden group rounded-[6px] font-satoshiBold text-[18px] ${width} ${height} ${border} ${backGroundColor} ${hoverBackGroundColor} hover:border-none transition duration-500 ${className}`;
+  const styleName = `relative overflow-hidden group rounded-[6px] font-satoshiBold text-[18px] ${width} ${height} ${border} ${backGroundColor} ${hoverBackGroundColor} transition duration-500 ${className}`;
 
   return (
     <button className={styleName}>
