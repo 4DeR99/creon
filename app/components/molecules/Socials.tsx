@@ -4,9 +4,9 @@ import Telegram from 'assets/icons/telegram.svg';
 import Discord from 'assets/icons/discord.svg';
 import Twitter from 'assets/icons/twitter.svg';
 
-function Socials() {
+function Socials({ className }: { className?: string }) {
   return (
-    <div className="flex gap-2.5">
+    <div className={`flex gap-2.5 ${className}`}>
       <ImageContainer>
         <Image src={Telegram} alt="telegram" width={13.33} height={12.44} />
       </ImageContainer>
