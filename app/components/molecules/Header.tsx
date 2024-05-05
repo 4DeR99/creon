@@ -30,7 +30,7 @@ function Header() {
           height="h-[44px]"
           border="border-[2px] border-white"
           backGroundColor=""
-          hoverBackGroundColor="hover:bg-primary"
+          hoverBackGroundColor="hover:bg-primary hover:border-primary"
           onClick={() => {}}
         />
       </div>
