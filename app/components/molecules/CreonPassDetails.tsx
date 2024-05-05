@@ -1,9 +1,9 @@
+'use client';
 import Button from 'components/atoms/Button';
 import Card from 'components/atoms/Card';
 import LargeTitle from 'components/atoms/LargeTitle';
 import MediumTitle from 'components/atoms/SmallTitle';
 import Seperator from 'components/atoms/Seperator';
-import Image from 'next/image';
 import React from 'react';
 import CreonVideo from './CreonVideo';
 
@@ -42,6 +42,7 @@ function CreonPassDetails() {
             backGroundColor="bg-gradient-to-r from-primary to-secondary"
             hoverBackGroundColor="hover:to-primary"
             className="mt-[4rem]"
+            onClick={() => {}}
           />
         </div>
         <CreonVideo

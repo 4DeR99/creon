@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import HexaIcon from './HexaIcon';
 import Image from 'next/image';
 import SmallTitle from './SmallTitle';

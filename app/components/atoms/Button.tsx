@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+'use client';
+import React from 'react';
 
 interface ButtonProps {
   title: string;
@@ -7,7 +8,7 @@ interface ButtonProps {
   border?: string;
   backGroundColor?: string;
   hoverBackGroundColor?: string;
-  onClick?: () => void;
+  onClick: () => void;
   className?: string;
 }
 
@@ -24,7 +25,7 @@ function Button({
   const styleName = `relative overflow-hidden group rounded-[6px] font-satoshiBold text-[18px] ${width} ${height} ${border} ${backGroundColor} ${hoverBackGroundColor} transition duration-500 ${className}`;
 
   return (
-    <button className={styleName}>
+    <button className={styleName} onClick={() => onClick()}>
       <span className="absolute top-0 left-0 w-full h-full flex justify-center ease-in-out items-center text-white transition duration-[400ms] group-hover:translate-y-[-80%]">
         {title}
       </span>
