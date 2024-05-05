@@ -1,3 +1,4 @@
+import ComingSoon from 'components/organisms/ComingSoon';
 import CreonPass from 'components/organisms/CreonPass';
 import MainSection from 'components/organisms/MainSection';
 import OurMission from 'components/organisms/OurMission';
@@ -11,6 +12,7 @@ export default function Home() {
       <CreonPass />
       <Profiting />
       <OurMission />
+      <ComingSoon />
     </>
   );
 }
