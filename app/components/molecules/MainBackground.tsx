@@ -2,7 +2,7 @@ import React from 'react';
 
 function MainBackground() {
   return (
-    <div className="w-full h-full absolute top-0">
+    <div className="w-full h-screen absolute top-0">
       <video
         src="/videos/mainBackgroundVideo.mp4"
         autoPlay

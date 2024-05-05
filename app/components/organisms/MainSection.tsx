@@ -11,7 +11,6 @@ function MainSection() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-end">
-      <MainBackground />
       <div className="flex flex-col items-start gap-10 text-primaryText mx-auto mb-[25vh] lg:mb-[10vh] z-20 h-full">
         <LargeTitle title={largTitle} className="xl:pr-[8rem] pt-1" />
         <div className="flex flex-col gap-3">
