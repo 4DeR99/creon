@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -19,6 +19,10 @@ html::-webkit-scrollbar-track {
 
 ::selection {
   background: #3D8BFF;
-  /* text-shadow: none; */
+  text-shadow: none;
   color: #000;
+}
+
+.rotate-x {
+  transform: rotateX(180deg);
 }

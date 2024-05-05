@@ -52,7 +52,8 @@ function MissionAccorions() {
           <AccordionItem
             title1={mission.title1}
             title2={mission.title2}
-            icon={mission.icon}>
+            icon={mission.icon}
+            className="hover:cursor-pointer">
             {mission.description}
           </AccordionItem>
           <Seperator />

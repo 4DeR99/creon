@@ -41,7 +41,9 @@ export function AccordionItem({
           <HexaIcon clicked={isSelected}>
             <Image src={icon} alt="hamid" width={26} height={26} />
           </HexaIcon>
-          <SmallTitle title="title" className="w-[150px] sm:w-auto">
+          <SmallTitle
+            title="title"
+            className={`w-[140px] sm:w-auto ${isSelected ? '' : 'hover:text-primary transition duration-200'}`}>
             <span>{title1}</span>
             <br />
             <span>{title2}</span>
@@ -53,7 +55,7 @@ export function AccordionItem({
           width={16}
           height={16}
           className={`transform transition-transform duration-400 ${
-            isSelected ? 'rotate-180' : ''
+            isSelected ? 'rotate-x' : ''
           }`}
         />
       </div>
