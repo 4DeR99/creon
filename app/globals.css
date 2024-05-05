@@ -26,3 +26,8 @@ html::-webkit-scrollbar-track {
 .rotate-x {
   transform: rotateX(180deg);
 }
+
+.blur-effect {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
