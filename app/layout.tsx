@@ -1,3 +1,4 @@
+import Footer from 'components/molecules/Footer';
 import Header from './components/molecules/Header';
 import './globals.css';
 
@@ -16,6 +17,7 @@ function Layout({ children }: LayoutProps) {
               {children}
             </div>
           </main>
+          <Footer />
         </div>
       </body>
     </html>
