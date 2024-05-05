@@ -62,8 +62,8 @@ interface DrawerMenuProps {
 function DrawerMenu({ isOpened, closeDrawer }: DrawerMenuProps) {
   return (
     <div
-      className={`${isOpened ? 'w-full' : 'w-0'} transition-all duration-0 h-screen flex lg:hidden fixed right-0 top-0 overflow-hidden z-[60]`}>
-      <div className="grow blur-effect" />
+      className={`${isOpened ? 'w-full' : 'w-0'} transition-all duration-0 h-full flex lg:hidden fixed right-0 top-0 overflow-hidden z-[60]`}>
+      <div className="grow blur-effect" onClick={() => closeDrawer()} />
       <div className="w-[45%] min-w-[200px] max-w-[300px] bg-black flex flex-col items-end justify-start pt-10">
         <div className="flex gap-[15px] mx-auto mb-10">
           <Button
@@ -76,13 +76,14 @@ function DrawerMenu({ isOpened, closeDrawer }: DrawerMenuProps) {
             onClick={() => {}}
           />
           <Button
-            title="🗙"
+            title="none"
             width="w-[38px]"
             height="h-[38px]"
             backGroundColor="bg-primary"
             hoverBackGroundColor="hover:bg-primary hover:border-primary"
-            onClick={() => closeDrawer()}
-          />
+            onClick={() => closeDrawer()}>
+            <X />
+          </Button>
         </div>
         <div className="w-[80%] min-w-[181.5px] flex flex-col gap-[18px]">
           <Seperator />
@@ -97,6 +98,23 @@ function DrawerMenu({ isOpened, closeDrawer }: DrawerMenuProps) {
         <Socials className="w-[80%] min-w-[181.5px] mb-[3rem]" />
       </div>
     </div>
+  );
+}
+
+function X() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1 1L7 7M13 13L7 7M7 7L13 1L1 13"
+        stroke="white"
+        stroke-width="2"
+      />
+    </svg>
   );
 }
 
