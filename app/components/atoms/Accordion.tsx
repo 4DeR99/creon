@@ -43,7 +43,7 @@ export function AccordionItem({
           </HexaIcon>
           <SmallTitle
             title="title"
-            className={`w-[140px] sm:w-auto ${isSelected ? '' : 'hover:text-primary transition duration-200'}`}>
+            className={`w-[130px] sm:w-fit sm:max-w-[280px] 2xl:max-w-[400px] ${isSelected ? '' : 'hover:text-primary transition duration-200'}`}>
             <span>{title1}</span>
             <br />
             <span>{title2}</span>

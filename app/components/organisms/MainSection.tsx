@@ -2,7 +2,6 @@ import React from 'react';
 import LargeTitle from 'components/atoms/LargeTitle';
 import Seperator from 'components/atoms/Seperator';
 import SmallTitle from 'components/atoms/SmallTitle';
-import MainBackground from 'components/molecules/MainBackground';
 
 function MainSection() {
   const largTitle = `The world's first platform for Tokenizing \n AI blockchain projects`;

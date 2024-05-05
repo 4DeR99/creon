@@ -1,4 +1,3 @@
-import FooterBackground from 'components/molecules/FooterBackground';
 import React from 'react';
 import MoreItem, { MoreItemProps } from 'components/molecules/MoreItem';
 
